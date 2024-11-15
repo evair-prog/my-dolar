@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+       <title> my dolars </title>
+   
+    </head>
+
+    <body>
+        <img src="./my-dolar (1).gif"/>
+        <h1> my-dolars </h1>
+         
+        <div>
+             <input id="inpunt-real" type="number" placeholder="valor em reais">
+             <input id="inpunt-dolar"placeholder="valor do dolar">
+             
+
+
+            <p>$  0</p>
+
+            <button onclick="calculardolar()"    >comverter</button>
+
+        </div>
+
+     </body>
+
+     <style>
+        body{
+            text-align: center;
+            background-color: #323232;
+            }
+
+        img{
+              width: 70% ;
+            }
+
+        h1 {
+            color: #cfff00;
+            font-size: 50 px;
+        }
+        
+
+        input{
+            width: 150px;
+            height: 30px;
+
+        }
+
+
+
+       #inpunt-real{
+                    border: 3px solid #cfff00;
+       }          
+       
+      #inpunt-dolar{
+                    border: 3px solid #FF0000;
+      }
+
+      p{
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    button{
+        height: 40px;
+        width: 150px;
+        font-size: 20px;
+        cursor: pointer;
+        border: 3px solid #cfff00;
+        border-radius: 10px;
+        background-color: #323232;
+        color: white;
+    }
+
+    button:hover{
+        color: #323232;
+        background-color: #cfff00;
+    }
+
+
+ </style>
+ 
+ <script>
+    function calculardolar(){
+          let real =document.getElementById("inpunt-real").value
+          let dolar =document.getElementById("inpunt-dolar").value
+          let resultado = real/dolar
+
+          alert (resultado)
+      }
+   
+   
+</script>
+
+</html>
